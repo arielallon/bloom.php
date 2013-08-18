@@ -95,17 +95,17 @@ class BloomFilter
 			$results[] = array(
 			                    // This is the index of the char in the filter string
 			                    // that we want to hit. You can think of it as a bucket.
-								// (Since each char is a byte, but _size was in bits, 
-								// we divide by eight).
-								"idx" => floor($modded / 8),
-								
-								// This is the byte-sized bitmask we want to use against
-								// the character we run into with 'idx'. 
-								// (We mod the decimal by 8. Then we left-shift a 1 that 
-								// many spots. That gurantuees that our byte is all zeros
-								// except for that single 1).
-								"mask" => 1 << $dec % 8
-								);
+                                // (Since each char is a byte, but _size was in bits, 
+                                // we divide by eight).
+                                "idx" => floor($modded / 8),
+                            
+                                // This is the byte-sized bitmask we want to use against
+                                // the character we run into with 'idx'. 
+                                // (We mod the decimal by 8. Then we left-shift a 1 that 
+                                // many spots. That gurantuees that our byte is all zeros
+                                // except for that single 1).
+                                "mask" => 1 << $dec % 8
+                                );
 		}
 		
 		return $results;
