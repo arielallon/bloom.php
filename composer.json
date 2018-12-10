@@ -1,0 +1,13 @@
+{
+    "name": "arielallon/bloom.php",
+    "description": "A Bloom filter implementation in PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ariel Allon",
+            "email": "arielallon@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
