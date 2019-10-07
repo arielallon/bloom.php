@@ -3,8 +3,8 @@
 class BloomFilter 
 {
 	
-	// Our filter is a bit array, represented as an string.
-	protected $_filter = "";
+	// Our filter is a bit array, represented as a string.
+	protected $_filter = '';
 	
 	protected $_size = 0;
 	protected $_numberOfHashes = 0;
